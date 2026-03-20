@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Percentage Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Percentage Calculator</h1>
+
+    <!-- 1. X% of Y -->
+    <div class="card">
+      <h3>Find X% of Y</h3>
+      <input type="number" id="percent" placeholder="Enter %">
+      <input type="number" id="number" placeholder="Enter number">
+      <button onclick="calcPercentage()">Calculate</button>
+      <p id="result1"></p>
+    </div>
+
+    <!-- 2. What percent X is of Y -->
+    <div class="card">
+      <h3>What % is X of Y</h3>
+      <input type="number" id="value1" placeholder="Enter value X">
+      <input type="number" id="value2" placeholder="Enter value Y">
+      <button onclick="calcPercentOf()">Calculate</button>
+      <p id="result2"></p>
+    </div>
+
+    <!-- 3. Increase/Decrease -->
+    <div class="card">
+      <h3>Increase/Decrease by %</h3>
+      <input type="number" id="base" placeholder="Base value">
+      <input type="number" id="change" placeholder="% change">
+      <button onclick="increaseValue()">Increase</button>
+      <button onclick="decreaseValue()">Decrease</button>
+      <p id="result3"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
